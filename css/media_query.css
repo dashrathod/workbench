@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@media(min-width:320px) and (max-width:480px) {
+    .padding_786 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .fluid_padding {
+        padding: 15px!important;
+    }
+    .tab_con_bg {
+        background-color: #f9f9f9;
+        padding: 0;
+    }
+    .cust_info {
+        padding: 10px 0;
+    }
+    .Site_Information {
+        overflow-x: scroll;
+    }
+    .order_table {
+        overflow-x: scroll;
+    }
+    .seatch_fild {
+        padding: 14px 20px;
+        border: 2px solid #c5c5c5!important;
+        width: 82.5%;
+    }
+    .main_logo > img {
+        width: 175px;
+        padding-left: 15px;
+        margin-bottom: 21px;
+    }
+    .navbar_bgg {
+        background-color: #0076ce;
+        padding: 16px 34px;
+    }
+
+    .welcome_contains > h2 {
+    font-size: 25px;
+}
+
+.select_fild_spash {
+    width: 68%;
+}
+
+.wlcome_img > img {
+    width: 100%;
+}
+
+}
+
+@media(min-width:480px) and (max-width:767px) {}
+
+@media(min-width:768px) and (max-width:1023px) {
+    .fluid_padding {
+        padding: 15px!important;
+    }
+    .tab_con_bg {
+        background-color: #f9f9f9;
+        padding: 0;
+    }
+    .cust_info {
+        padding: 10px 0;
+    }
+    .Site_Information {
+        overflow-x: scroll;
+    }
+    .order_table {
+        overflow-x: scroll;
+    }
+    .seatch_fild {
+        padding: 14px 20px;
+        border: 2px solid #c5c5c5!important;
+        width: 92%;
+    }
+
+    .wlcome_img > img {
+    width: 80%;
+    margin-top: 61px;
+}
+}
+
+@media(min-width:1024px) and (max-width:1170px) {
+
+	.seatch_fild {
+    padding: 14px 20px;
+    border: 2px solid #c5c5c5!important;
+    width: 80%;
+}
+
+.select_fild_spash {
+    width: 67%;
+}
+
+.welcome_contains > h2 {
+    font-size: 31px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+}
+

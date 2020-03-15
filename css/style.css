@@ -1,0 +1,271 @@
+body {
+    font-family: 'Poppins', sans-serif!important;
+}
+
+.navbar_bgg {
+    background-color: #0076ce;
+    padding: 24px 50px;
+}
+
+.main_logo > img {
+    width: 175px;
+    padding-left: 15px;
+}
+
+.profile_side > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.profile_side > ul > li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 15px;
+    position: relative;
+}
+
+.profile_round {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    display: inherit;
+    border-radius: 50px;
+}
+
+.profile_side > ul > li > i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.profile_side > ul > li > span {
+    margin: 0 10px;
+}
+
+.bordr_ver:before {
+    content: " ";
+    position: absolute;
+    height: 30px;
+    width: 2px;
+    background-color: #fff;
+    left: -5px;
+}
+
+.fluid_padding {
+    padding: 0 40px!important;
+}
+
+.section_padding {
+    padding: 40px 0;
+}
+
+.select_fild {
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid #c5c5c5!important;
+}
+
+.seatch_fild {
+    padding: 14px 20px;
+    border: 2px solid #c5c5c5!important;
+    width: 80%;
+}
+
+.search_btn {
+    height: 50px;
+    width: 50px;
+    background-color: #0076ce;
+    color: #fff;
+    border: 0;
+    margin-left: -4px;
+}
+
+.search_btn > i {
+    font-size: 20px;
+}
+
+.aa_tab1 {
+    background-color: #f0f0f0;
+    padding: 12px 20px!important;
+    border: 1px solid #c5c5c5!important;
+}
+
+.tab_con_bg {
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+.customer_sec {
+    background-color: #fff;
+    padding: 15px 20px;
+}
+
+.customer_sec > h2 {
+    font-size: 20px;
+    padding: 15px 0px;
+    color: #333;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.customer_sec > h3 {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.cust_info > h2 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.cust_info > p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.cust_info > p > span {
+    color: #777;
+    font-weight: 400;
+}
+
+.risk_code_box {
+    border-right: 1px solid #6e2585;
+    border-left: 4px solid #6e2585;
+    border-bottom: 1px solid #6e2585;
+    border-top: 1px solid #6e2585;
+    padding: 25px;
+    position: relative;
+}
+
+.risk_code_box > h2 {
+    color: #6e2585;
+    font-size: 18px;
+    margin: 0;
+}
+
+.risk_code_box > h2:after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: #6e2585;
+    transform: rotate(40deg);
+}
+
+.risk_code_box_2 {
+    border-right: 1px solid #ee6411;
+    border-left: 4px solid #ee6411;
+    border-bottom: 1px solid #ee6411;
+    border-top: 1px solid #ee6411;
+    padding: 25px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.risk_code_box_2 > h2 {
+    color: #ee6411;
+    font-size: 18px;
+    margin: 0;
+}
+
+.select_option_currency {
+    padding: 12px 0;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #464a4c;
+    background-color: #fff;
+    border-color: #ddd #ddd #fff;
+    padding: 12px;
+    border-top: 4px solid #007db8!important;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    padding: 12px;
+}
+
+.Site_Information {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-top: 50px;
+    border-top: 4px solid #007db8;
+}
+
+.site_info_title {
+    font-size: 20px;
+    padding: 15px 0px;
+    color: #333;
+    font-weight: 500;
+}
+
+.table_site {
+    margin-top: 20px;
+}
+
+.order_table {
+    margin: 30px;
+}
+
+
+/*splash Start*/
+
+
+.welcome_contains > h2 {
+	font-size: 40px;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.welcome_contains > p {
+	font-size: 16px;
+	font-weight: 500;
+	color: 333;
+}
+
+.sdsdsdsd {
+	height: 90vh;
+}
+
+.select_fild_spash {
+	  width: 30%;
+    padding: 14px 20px;
+    border: 2px solid #c5c5c5!important;
+    margin-top: 20px;
+}
+
+.wlcome_img > img {
+	width: 80%;
+}
+
+/*15-03-2020*/
+
+.export_data > ul {
+    
+    margin: 0;
+    padding: 0;    
+}
+
+.export_data > ul > li {
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #0076ce;
+}
+
+.export_data > ul > li > i {
+    color: #0076ce;
+    padding-right: 5px;
+}
+
+.dtl_div{
+    padding-left: 40px;;
+}
