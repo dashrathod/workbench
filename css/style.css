@@ -269,3 +269,32 @@ body {
 .dtl_div{
     padding-left: 40px;;
 }
+
+#siteInfoExp thead {
+    color: white;
+    background-color: #0076ce;
+}
+#siteInfoExp td {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.pgnBtn{
+    margin: 0px 10px;
+}
+.pgnIpt{
+    width: 30px;
+    margin: 0px 10px;
+}
+.pgnicn{
+    margin: 0px 5px;
+}
+.pagination{
+    font-size: 15px;
+}
+.blurBtn{
+    color: transparent;
+    text-shadow: 0 0 1px #696363fc;
+}
+.pagination a:focus, a:hover ,a{
+    color: black !important;
+}
