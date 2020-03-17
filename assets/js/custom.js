@@ -1,14 +1,17 @@
 $(document).ready(function () {
-     let siteInfo = $("#siteInfo").DataTable({
+     /* let siteInfo = $("#siteInfo").DataTable({
           ordering: false,
           searching: false,
           lengthChange: false,
           bInfo : false
-     });
+     }); */
+
+     $("#siteInfo tr").click(function (e) {
+          $(this).next('tr').toggle();
+      });
 
 
-
-     function formatInvoice(d) {
+     /* function formatInvoice(d) {
           // `d` is the original data object for the row
           return `
          <table class="table" id="siteInfoExp" width="100%">
@@ -73,5 +76,5 @@ $(document).ready(function () {
                row.child(formatInvoice(row.data())).show();
                tr.addClass('shown');
           }
-     });
+     }); */
 });
