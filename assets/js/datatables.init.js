@@ -8,6 +8,12 @@ $(document).ready(function () {
         $(this).next('tr').toggle();
     });
 
+
+    $("td").each(function () {
+        $(this).addClass("text-break");
+        $(this).children().addClass("text-break");
+    });
+
     /* 
         function formatInvoice(d) {
             // `d` is the original data object for the row
