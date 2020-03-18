@@ -7,7 +7,7 @@ $(document).ready(function () {
      }); */
 
      $("#siteInfo tr").click(function (e) {
-          $(this).next('tr').toggle('slow');
+          $(this).next('tr').toggle('5000');
      });
 
      $("td").each(function () {
