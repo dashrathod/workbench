@@ -26,6 +26,7 @@
         type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/table.css" id="table-style" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -111,9 +112,69 @@
                                                                 for="customCheckAll">All</label>
                                                         </div>
                                                     </th>
-                                                    <th>Cur</th>
+                                                    <th>
+                                                        <div class="dropdown">
+                                                            <span data-toggle="dropdown">Cur<i class="fa fa-filter"></i></span>
+                                                            <ul class="dropdown-menu  dropdown-menu-left">
+                                                                <li>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="EUR">
+                                                                        <label class="custom-control-label"
+                                                                            for="EUR">EUR</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="USD">
+                                                                        <label class="custom-control-label"
+                                                                            for="USD">USD</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </th>
                                                     <th>TXN No</th>
-                                                    <th>TXN Type</th>
+                                                    <th>
+                                                        <div class="dropdown">
+                                                            <span data-toggle="dropdown">TXN Type<i class="fa fa-filter"></i></span>
+                                                            <ul class="dropdown-menu  dropdown-menu-right">
+                                                                <li>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="INV">
+                                                                        <label class="custom-control-label"
+                                                                            for="INV">INV</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="Cr">
+                                                                        <label class="custom-control-label"
+                                                                            for="Cr">Cr</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="Dr">
+                                                                        <label class="custom-control-label"
+                                                                            for="Dr">Dr</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="Pmt">
+                                                                        <label class="custom-control-label"
+                                                                            for="Pmt">Pmt</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </th>
                                                     <th>Late</th>
                                                     <th>TXN Date</th>
                                                     <th>TXN Due Date</th>
@@ -122,7 +183,45 @@
                                                     <th>Ord No</th>
                                                     <th>Purch Ord</th>
                                                     <th>POD</th>
-                                                    <th>Disp / Prom</th>
+                                                    <th>
+                                                        <div class="dropdown">
+                                                            <span data-toggle="dropdown">Disp / Prom<i class="fa fa-filter"></i></span>
+                                                            <ul class="dropdown-menu  dropdown-menu-right">
+                                                                <li>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="Disputes">
+                                                                        <label class="custom-control-label"
+                                                                            for="Disputes">Disputes</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="Promises">
+                                                                        <label class="custom-control-label"
+                                                                            for="Promises">Promises</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="Broken Promises">
+                                                                        <label class="custom-control-label"
+                                                                            for="Broken Promises">Broken Promises</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="Both Disp & Prom">
+                                                                        <label class="custom-control-label"
+                                                                            for="Both Disp & Prom">Both Disp & Prom</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </th>
                                                 </tr>
                                             </thead>
 

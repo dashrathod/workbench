@@ -5,7 +5,7 @@ $(document).ready(function () {
         buttons: ["copy", "excel", "pdf", "colvis"]
     }).buttons().container().appendTo("#datatable-buttons_wrapper .col-md-6:eq(0)");
     $("#datatable tr").click(function (e) {
-        $(this).next('tr').toggle('5000');
+        $(this).next('tr').toggle('5000','linear');
     });
 
 
