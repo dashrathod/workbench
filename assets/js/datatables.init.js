@@ -4,10 +4,11 @@ $(document).ready(function () {
         lengthChange: !1,
         buttons: ["copy", "excel", "pdf", "colvis"]
     }).buttons().container().appendTo("#datatable-buttons_wrapper .col-md-6:eq(0)");
-    $("#datatable tr").click(function (e) {
-        $(this).next('tr').toggle('5000','linear');
-    });
 
+    $("#datatable tr").not("#datatable .rowDropDown").click(function (e) {
+        $(".collapse").collapse('toggle');
+        $(this).next('tr').toggle('5000', 'linear');
+    });
 
     $("td").each(function () {
         $(this).addClass("text-break");
