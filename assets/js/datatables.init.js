@@ -1,13 +1,23 @@
 $(document).ready(function () {
     // let invoiceTable = $("#datatable").DataTable();
-    $("#datatable-buttons").DataTable({
-        lengthChange: !1,
-        buttons: ["copy", "excel", "pdf", "colvis"]
-    }).buttons().container().appendTo("#datatable-buttons_wrapper .col-md-6:eq(0)");
+    // $("#datatable-buttons").DataTable({
+    //     lengthChange: !1,
+    //     buttons: ["copy", "excel", "pdf", "colvis"]
+    // }).buttons().container().appendTo("#datatable-buttons_wrapper .col-md-6:eq(0)");
 
-    $("#datatable tr").not("#datatable .rowDropDown").click(function (e) {
+    $("#datatable tbody tr").click(function (e) {
         $(".collapse").collapse('toggle');
         $(this).next('tr').toggle('5000', 'linear');
+    });
+
+    $(".dropdown-menu").on('click', 'li a', function () {
+        // var selText = $(this).children("h4").html();
+
+
+        // $(this).parent('li').siblings().removeClass('active');
+        // $('#vl').val($(this).attr('data-value'));
+        // $(this).parents('.btn-group').find('.selection').html(selText);
+        $(this).parents('ul').addClass("show");
     });
 
     $("td").each(function () {
