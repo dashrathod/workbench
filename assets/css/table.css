@@ -15,3 +15,10 @@
 .checkboxIndex .custom-control-input{
     z-index: 1;
 }
+
+@media (max-width: 520px){
+    .promiseMenu {
+        left: -120px !important;
+        transform: translate3d(-107px, 15px, 0px) !important;
+    }
+}
