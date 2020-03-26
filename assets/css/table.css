@@ -1,0 +1,28 @@
+.dropdown-menu{border-top: 5px solid #0076CE !important;}
+.rowDropDown ul{padding: 10px;min-width: 250px;font-size: smaller;}
+.prmNotes {width: 100%;height: 40px;}
+.checkboxIndex .custom-control-input{z-index: 1;}
+
+.badge {padding: .3em .4em;font-size: 100%; color:#fff !important;}
+
+.badge-red{color:#fff;background-color:#d90000}
+a.badge-red:focus,a.badge-red:hover{color:#fff;background-color:#c60000}
+a.badge-red.focus,a.badge-red:focus{outline:0;-webkit-box-shadow:0 0 0 .15rem rgba(244,106,106,.5);box-shadow:0 0 0 .15rem rgba(244,106,106,.5)}
+
+.badge-orange{color:#fff;background-color:#EE6411}
+a.badge-orange:focus,a.badge-orange:hover{color:#fff;background-color:#f36008}
+a.badge-orange.focus,a.badge-orange:focus{outline:0;-webkit-box-shadow:0 0 0 .15rem rgba(232,62,140,.5);box-shadow:0 0 0 .15rem rgba(232,62,140,.5)}
+
+.badge-yellow{color:#fff;background-color:#f1b44c}
+a.badge-yellow:focus,a.badge-yellow:hover{color:#fff;background-color:#eda01d}
+a.badge-yellow.focus,a.badge-yellow:focus{outline:0;-webkit-box-shadow:0 0 0 .15rem rgba(241,180,76,.5);box-shadow:0 0 0 .15rem rgba(241,180,76,.5)}
+
+@media (max-width: 520px){
+    .promiseMenu {
+        left: -120px !important;
+        transform: translate3d(-107px, 15px, 0px) !important;
+    }
+}
+
+
+
