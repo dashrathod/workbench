@@ -1,0 +1,96 @@
+.rating{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.rating input{
+    display: none;
+}
+
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+.rating label::before{
+    content: '😜';
+    position: relative;
+    display: block;
+    font-size: 40px;
+    color: red ;
+}
+
+.rating label::after{
+    content: '😃';
+    position: absolute;
+    display: block;
+    font-size: 40px;
+    top: 0;
+    opacity: 0;
+    color: green ;
+    /* transition: 5s; */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.rating label:hover::after,
+.rating input:checked ~ label::after
+{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+.starts {
+    display: table;
+}
+
+input.star{
+    display: none;
+}
+label.star{
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all 0.2s;
+}
+/* label.star::before{
+    content: '😜';
+} */
+
+/* initialy */
+label.star-1::before{
+    content: '🙆';
+}
+label.star-2::before{
+    content: '🙏';
+}
+label.star-3::before{
+    content: '✌';
+}
+label.star-4::before{
+    content: '❗';
+}
+label.star-5::before{
+    content: '🚀';
+}
+s
+
+/* input.star-5:checked ~ label.star-2::before{
+    color: #fe7;
+    background-color: royalblue !important;
+    text-shadow: 0 0 20px #952;
+}
+input.star-5:checked ~ label.star::before{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+} */
