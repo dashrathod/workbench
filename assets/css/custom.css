@@ -1,3 +1,26 @@
+/* for common */
+.swal-footer{
+    text-align: center!important;
+}
+.main-content {
+    padding: 50px;
+    background-color: gray;
+}
+.mainLbl{
+    color: #241c92d9;
+}
+.description{
+    font-size: 14px !important;
+}
+/* for common */
+
+
+
+
+
+
+
+
 .rating{
     position: absolute;
     top: 50%;
@@ -69,21 +92,27 @@ label.star{
 
 /* initialy */
 label.star-1::before{
-    content: '🙆';
+    content: '\1F62D';
 }
 label.star-2::before{
-    content: '🙏';
+    content: '\1F61E';
 }
 label.star-3::before{
-    content: '✌';
+    content: '\1F641';
 }
 label.star-4::before{
-    content: '❗';
+    content: '\1F600';
 }
 label.star-5::before{
-    content: '🚀';
+    content: '\1F60D';
 }
-s
+label.star:hover{
+    font-size: 45px;
+}
+label.star:hover::before{
+    font-size: 45px;
+}
+
 
 /* input.star-5:checked ~ label.star-2::before{
     color: #fe7;
