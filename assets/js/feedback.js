@@ -20,14 +20,11 @@ $(document).ready(function () {
                     closeModal: true
                }
           }
-          ,
-     }).then((value) => {
-          if (value) {
-               $('#feedback').show();
-          } else {
-
-          }
      });
+
+     $('.btn-primary').click(function (params) {
+          $('#feedback').show();
+     })
 
      $('#feedbackForm').submit(function (e) {
           e.preventDefault();

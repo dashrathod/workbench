@@ -7,7 +7,6 @@
     background-color: gray;
 }
 .mainLbl{
-    /* color: #241c92d9; */
     color: rgba(0, 78, 140, 1);
 }
 .description{
@@ -33,25 +32,22 @@ label.star{
     color: #444;
     transition: all 0.2s;
 }
-/* label.star::before{
-    content: '😜';
-} */
 
 /* initialy */
 label.star-1::before{
-    content: '\1F62D';
+    content: '\1F62D';/*😭*/
 }
 label.star-2::before{
-    content: '\1F61E';
+    content: '\1F61E';/*😞*/
 }
 label.star-3::before{
-    content: '\1F641';
+    content: '\1F641';/*🙁*/
 }
 label.star-4::before{
-    content: '\1F600';
+    content: '\1F600';/*😀*/
 }
 label.star-5::before{
-    content: '\1F60D';
+    content: '\1F60D';/*😍*/
 }
 label.star:hover{
     font-size: 45px;
@@ -60,16 +56,6 @@ label.star:hover::before{
     font-size: 45px;
 }
 
-
-/* input.star-5:checked ~ label.star-2::before{
-    color: #fe7;
-    background-color: royalblue !important;
-    text-shadow: 0 0 20px #952;
-}
-input.star-5:checked ~ label.star::before{
-    color: #fe7;
-    text-shadow: 0 0 20px #952;
-} */
 
 
 .btn-primary {
@@ -108,10 +94,6 @@ input.star-5:checked ~ label.star::before{
     border-color: rgba(0, 78, 140, 1) !important;
     background-color: rgba(0, 78, 140, 1) !important;;
 }
-/* textarea.form-control {
-    height: auto;
-    border-radius: 10px !important;
-} */
 .s-button {
     letter-spacing: 3px;
     font-weight: 500;
