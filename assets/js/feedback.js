@@ -31,7 +31,7 @@ $(document).ready(function () {
 
      $('#feedbackForm').submit(function (e) {
           e.preventDefault();
-          swal("Thank you for time we value for your feedback.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.", "success");
+          $('#feedback').hide();
           swal({
                title: "Thank you for time we value for your feedback.",
                text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.",
@@ -49,15 +49,24 @@ $(document).ready(function () {
           var comment = $(this).attr('id').split('-').shift();
           $('.' + comment + '_comment').remove();
           if (radioValue) {
-               $('label.star').css('font-size', '36px');
+               $(this).parent().siblings().removeClass('active');
+               // $('label.star:not(.active)').css('font-size', '36px');
+               $(this).parent().siblings().css('font-size', '36px');
+               $(this).parent().addClass('active');
                $(this).parent().css('font-size', '50px');
                $(this).parent().siblings().css('opacity', '0.5');
                $(this).parent().css('opacity', '1');
                if (radioValue < 4) {
-                    $('.' + comment).append('<div class="form-group text-left ' + comment + '_comment"> <textarea class="form-control" placeholder="Write your comments"></textarea> </div>');
+                    $('.' + comment).append('<div class="form-group text-left ' + comment + '_comment"> <textarea class="form-control" placeholder="Write your comments"></textarea><div class="char_number small">Count : 0</div></div>');
                } else {
                     $('.' + comment + '_comment').remove();
                }
           }
+     });
+
+     //for counter of text area
+     $("body").on('keyup', 'textarea', function () {
+          var charsno = $(this).val().length;
+          $(this).siblings('.char_number').html("Count : " + charsno);
      });
 });

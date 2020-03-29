@@ -13,6 +13,9 @@
 .description{
     font-size: 14px !important;
 }
+.char_number{
+    float: right;
+}
 /* for common */
 
 
