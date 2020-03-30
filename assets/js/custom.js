@@ -14,7 +14,7 @@ $(document).ready(function () {
           searching: false,
           lengthChange: false,
           bInfo: false,
-          columnDefs: [{ width: '1%', targets: 0 },{ width: '20%', targets: [1, 2, 3, 4, 5] }],
+          columnDefs: [{ width: '1%', targets: 0 },{ width: '30%', targets: [1] }],
           autoWidth: false,
      });
 
