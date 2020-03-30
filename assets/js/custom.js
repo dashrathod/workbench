@@ -13,7 +13,9 @@ $(document).ready(function () {
           ordering: false,
           searching: false,
           lengthChange: false,
-          bInfo: false
+          bInfo: false,
+          columnDefs: [{ width: '1%', targets: 0 },{ width: '20%', targets: [1, 2, 3, 4, 5] }],
+          autoWidth: false,
      });
 
 
