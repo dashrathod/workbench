@@ -7,7 +7,6 @@
 .bg-gray{background-color:#eee!important}
 
 
-
 #siteInfoExp {
     margin-top: 10px !important; 
 }
@@ -25,7 +24,6 @@
 .pgnIpt{
     width: 30px;
     margin: 0px 10px;
-    padding: 5px;
 }
 .pgnicn{
     margin: 0px 5px;
@@ -39,4 +37,7 @@
 }
 .pagination a:focus, a:hover ,a{
     color: black !important;
+}
+#siteInfo td:nth-child(2){ 
+    width: 30%!important;
 }
