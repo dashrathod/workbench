@@ -34,26 +34,49 @@ label.star{
 }
 
 /* initialy */
-label.star-1::before{
-    content: '\1F62D';/*😭*/
+.deactive{
+    filter: hue-rotate(0deg) saturate(0.1) brightness(100%) saturate(1);
+    webkit-filter: hue-rotate(0deg) saturate(0.1) brightness(100%) saturate(1);
 }
-label.star-2::before{
-    content: '\1F61E';/*😞*/
+label.star-1{
+    /*content: '\1F62D';*//*😭*/
+    background: transparent url("../images/smily/crying-face.svg") no-repeat center top;
+    width: 50px;
+    height: 50px;
 }
-label.star-3::before{
-    content: '\1F641';/*🙁*/
+label.star-2{
+    /*content: '\1F61E';*//*😞*/
+    background: transparent url("../images/smily/pensive-face.svg") no-repeat center top;
+    width: 50px;
+    height: 50px;
 }
-label.star-4::before{
-    content: '\1F600';/*😀*/
+label.star-3{
+    /*content: '\1F641';*//*🙁*/
+    background: transparent url("../images/smily/neutral-face.svg") no-repeat center top;
+    width: 50px;
+    height: 50px;
 }
-label.star-5::before{
-    content: '\1F60D';/*😍*/
+label.star-4{
+    /*content: '\1F600';*//*😀*/
+    background: transparent url("../images/smily/smiling-face-sunglasses.svg") no-repeat center top;
+    width: 50px;
+    height: 50px;
+}
+label.star-5{
+    /*content: '\1F60D';*//*😍*/
+    background: transparent url("../images/smily/smiling-face-heart-eyes.svg") no-repeat center top;
+    width: 50px;
+    height: 50px;
+}
+label.deactive:hover{
+    font-size: 45px;
+    transform: scale(1.3) !important;
+    background-color: transparent;
 }
 label.star:hover{
     font-size: 45px;
-}
-label.star:hover::before{
-    font-size: 45px;
+    transform: scale(1.3) !important;
+    background-color: transparent;
 }
 
 

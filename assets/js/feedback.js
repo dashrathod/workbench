@@ -47,12 +47,16 @@ $(document).ready(function () {
           $('.' + comment + '_comment').remove();
           if (radioValue) {
                $(this).parent().siblings().removeClass('active');
+               $(this).parent().siblings().addClass('deactive');
+               $(this).parent().removeClass('deactive');
                // $('label.star:not(.active)').css('font-size', '36px');
-               $(this).parent().siblings().css('font-size', '36px');
+               // $(this).parent().siblings().css('font-size', '36px');
+               $(this).parent().siblings().css('transform', 'scale(1.0)');
                $(this).parent().addClass('active');
-               $(this).parent().css('font-size', '50px');
-               $(this).parent().siblings().css('opacity', '0.5');
-               $(this).parent().css('opacity', '1');
+               // $(this).parent().css('font-size', '50px');
+               $(this).parent().css('transform', 'scale(1.3)');
+               // $(this).parent().siblings().css('opacity', '0.5');
+               // $(this).parent().css('opacity', '1');
                if (radioValue < 4) {
                     $('.' + comment).append('<div class="form-group text-left ' + comment + '_comment"> <textarea class="form-control" placeholder="Write your comments"></textarea><div class="char_number small">Count : 0</div></div>');
                } else {
