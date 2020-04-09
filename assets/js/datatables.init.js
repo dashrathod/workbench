@@ -5,7 +5,12 @@ $(document).ready(function () {
     }); */
 
 
-    $("#ordertable tr").click(function (e) {
+    $("#ordertable tr:not('.collapsed')").click(function (e) {
+        $(this).next('tr').toggle('5000', 'linear');
+        $(".collapse").collapse('toggle');
+    });
+
+    $("#invoicetable tr:not('.collapsed')").click(function (e) {
         $(this).next('tr').toggle('5000', 'linear');
         $(".collapse").collapse('toggle');
     });
