@@ -7,12 +7,12 @@ $(document).ready(function () {
 
     $("#ordertable tr:not('.collapsed')").click(function (e) {
         $(this).next('tr').toggle('5000', 'linear');
-        $(".collapse").collapse('toggle');
+        $("#order1").collapse('toggle');
     });
 
     $("#invoicetable tr:not('.collapsed')").click(function (e) {
         $(this).next('tr').toggle('5000', 'linear');
-        $(".collapse").collapse('toggle');
+        $("#invoice1").collapse('toggle');
     });
 
     $(".dropdown-menu").on('click', 'li a', function () {
