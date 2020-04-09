@@ -1,0 +1,1314 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Dell - Collection UI Dashboard</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta content="Collection UI Admin Dashboard" name="description" />
+      <!-- App favicon -->
+      <!--<link rel="shortcut icon" href="assets/images/favicon.ico">-->
+      <!-- Bootstrap Css -->
+      <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+      <!-- Icons Css -->
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+         type="text/css" />
+      <!-- App Css-->
+      <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body data-layout="horizontal" data-topbar="dark">
+      <!-- Begin page --> 
+      <div id="layout-wrapper">
+         <header id="page-topbar">
+            <div class="navbar-header">
+               <div class="d-flex">
+                  <!-- LOGO --> 
+                  <div class="navbar-brand-box"> <a href="index.html" class="logo logo-light"> <span class="logo-sm"> <img src="assets/images/dell-logo.svg" alt="" height="66"> </span> <span class="logo-lg"> <img src="assets/images/dell-logo.svg" alt="" height="50"> </span> </a> </div>
+               </div>
+               <div class="d-flex">
+                  <button type="button" style="border-right: 1px solid #fff;" class="btn header-item"> <i class="fa fa-question-circle-o fa-2x" aria-hidden="true"></i> </button> 
+                  <div class="dropdown d-inline-block">
+                     <button type="button" class="btn header-item" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="d-none d-xl-inline-block ml-1">akshay_pandey1@dell.com P</span> <i class="fa fa-angle-down" aria-hidden="true"></i> <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar"> </button> 
+                     <div class="dropdown-menu dropdown-menu-right">
+                        <!-- item--> <!-- <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle mr-1"></i> Profile</a> <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="bx bx-wrench font-size-16 align-middle mr-1"></i> Settings</a> <div class="dropdown-divider"></div> --> <a class="dropdown-item text-danger" href="#"><i class="bx bx-power-off font-size-16 align-middle mr-1 text-danger"></i> Logout</a> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- ============================================================== --> <!-- Start right Content here --> <!-- ============================================================== --> 
+         <div class="main-content">
+            <div class="page-content">
+               <div class="container-fluid">
+                  <div class="row justify-content-end mb-2 searchBar">
+                     <div class="col-lg-3 col-md-12">
+                        <select id="ResponsibilityType" name="ResponsibilityType" class="form-control" placeholder="--Select Responsibility--">
+                           <option value="" disabled selected>--Select Responsibility--</option>
+                           <option value="US">CL-US Collections Agent</option>
+                           <option value="ES">CL-Es Collections Agent</option>
+                           <option value="DE">CL-DE Collections Agent</option>
+                        </select>
+                     </div>
+                     <div class="col-lg-4 col-md-12 input-group">
+                        <select class="form-control" placeholder="--Select Responsibility--">
+                           <option value="" disabled selected>--Select Field--</option>
+                           <option value="1">Account Number</option>
+                           <option value="2">Party Number</option>
+                           <option value="3">Order Number</option>
+                           <option value="4">Invoice Number</option>
+                           <option value="5">PO Number</option>
+                        </select>
+                        <input name="" class="form-control" placeholder="Search Here" type="text"> 
+                        <div class="input-group-prepend"> <span class="input-group-text"> <i class="fa fa-search"></i> </span> </div>
+                     </div>
+                  </div>
+                  <div class="row justify-content-center pt-2">
+                     <div class="col-xl-12">
+                        <ul class="nav nav-tabs" role="tablist">
+                           <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#PartyNo" role="tab"> <span class="d-block d-sm-none"><i class="fas fa-home"></i></span> <span class="d-none d-sm-block">Party Number</span> </a> </li>
+                           <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#Accounts" role="tab"> <span class="d-block d-sm-none"><i class="far fa-user"></i></span> <span class="d-none d-sm-block">Accounts</span> </a> </li>
+                        </ul>
+                        <div class="card card-body bg-gray">
+                           <!-- Tab panes --> 
+                           <div class="tab-content p-3 text-muted bg-white">
+                              <div class="tab-pane" id="PartyNo" role="tabpanel">
+                                 <p class="mb-0"> Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. </p>
+                              </div>
+                              <div class="tab-pane active" id="Accounts" role="tabpanel">
+                                 <h3 class="mt-2">Customer</h3>
+                                 <hr>
+                                 <h4 class="mt-3">Account Number : DE123456</h4>
+                                 <div class="row mt-4">
+                                    <div class="col-lg-3 col-md-12">
+                                       <h5 class="mb-3">Customer Info</h5>
+                                       <p class="text-muted"><strong>Customer Name : </strong>Tsakiropoulos, Nikos</p>
+                                       <p class="text-muted"><strong>VAT ID : </strong>123456789</p>
+                                       <p class="text-muted"><strong>Sales Channel : </strong>125</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-12">
+                                       <h5 class="mb-3">Account Status</h5>
+                                       <p class="text-muted"><strong>Payment Terms : </strong>Prepaid</p>
+                                       <p class="text-muted"><strong>Account : </strong>Active</p>
+                                       <p class="text-danger"><strong>Hold Applied : </strong>Yes</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-12">
+                                       <h5 class="mb-3">Parent Info</h5>
+                                       <p class="text-muted"><strong>CFCG Code : </strong>1234567890</p>
+                                       <p class="text-muted"><strong>CFCG Name : </strong>Tsakiropoulos</p>
+                                       <p class="text-muted"><strong>CFCG Risk Code : </strong>Diamond</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-12">
+                                       <blockquote class="blockquote-risk">
+                                          <p><strong>Risk Code : Diamond </strong> &nbsp; <i class="fa fa-diamond" aria-hidden="true"></i></p>
+                                       </blockquote>
+                                       <blockquote class="blockquote-credit-limit mb-0">
+                                          <p><strong>Available Credit Limit</strong></p>
+                                          <div class="form-group">
+                                             <select class="custom-select">
+                                                <option selected="">1,23,45,67,890 EUR</option>
+                                                <option value="1">2,34,56,78,901 EUR</option>
+                                                <option value="2">3,45,67,89,012 EUR</option>
+                                             </select>
+                                          </div>
+                                       </blockquote>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- tab panel end --> 
+                           <div class="row mt-4">
+                              <div class="col-12">
+                                 <div class="card">
+                                    <div class="card-body top-border">
+                                       <div class="row mb-2">
+                                          <div class="col-sm-6">
+                                             <h3>Site Information</h3>
+                                          </div>
+                                          <div class="col-lg-6 col-md-12 input-group justify-content-end">
+                                             <select class="form-control" placeholder="--Select Responsibility--">
+                                                <option value="" disabled selected>--Select Type--</option>
+                                                <option value="1">Email Address</option>
+                                                <option value="2">Site ID</option>
+                                             </select>
+                                             <input name="" class="form-control" placeholder="Search Here" type="text"> 
+                                             <div class="input-group-prepend"> <span class="input-group-text"> <i class="fa fa-search"></i> </span> </div>
+                                          </div>
+                                          <!-- end col--> 
+                                       </div>
+                                       <div class="table-responsive">
+                                          <table id="siteInfo" class="table table-centered" style="width:99% !important;">
+                                             <thead class="thead-light">
+                                                <tr>
+                                                   <th>
+                                                      <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheckAll"> <label class="custom-control-label" for="customCheckAll"> </label> </div>
+                                                   </th>
+                                                   <th> </th>
+                                                   <th> </th>
+                                                   <th> </th>
+                                                   <th> </th>
+                                                   <th> </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr data-toggle="collapse" data-target="#demo">
+                                                   <td>
+                                                      <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                                   </td>
+                                                   <td>
+                                                      <a href="#" class="badge badge-primary m-1">P</a> 
+                                                      <p class="mb-1">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                      <p class="mb-0">(Hannover-BILL_TO-101811577)</span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Rakesh Kumar</p>
+                                                      <p class="mb-1">rakesh.kumar@sdkfj.com</p>
+                                                      <p class="mb-0">+1 987 654 3256</p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Biz Purp : <span class="font-weight-medium"> </span> </p>
+                                                      <p class="mb-1">LF : <span class="font-weight-medium"> </span></p>
+                                                      <p class="mb-0">Stat/Dun : <span class="font-weight-medium">Enable</span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Inv Copies : <span class="font-weight-medium"> 1 </span></p>
+                                                      <p class="mb-1">Cr Memos : <span class="font-weight-medium"> 1 </span></p>
+                                                      <p class="mb-0">Dr Memos : <span class="font-weight-medium"> 0 </span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Consolidation Method : <span class="font-weight-medium"> PO </span></p>
+                                                      <p class="mb-1">Delivery Method : <span class="font-weight-medium"> Email </span></p>
+                                                      <p class="text-sm-right mb-0"><button type="button" class="btn btn-link p-0">More Invoice Preferences</button></p>
+                                                   </td>
+                                                </tr>
+                                                <tr style="display: none;">
+                                                   <td colspan="6" class="alert alert-info">
+                                                      <div id="demo" class="collapse">
+                                                         <table id="siteInfoExp" class="table">
+                                                            <thead>
+                                                               <tr>
+                                                                  <th><input type="checkbox" onclick="checkAll(this)"></th>
+                                                                  <th>Contact Name</th>
+                                                                  <th>Contact Email</th>
+                                                                  <th>Contact Number</th>
+                                                                  <th>Business Purpose</th>
+                                                               </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td><input type="checkbox" onclick="checkAll(this)"></td>
+                                                                  <td>Rakesh Kumar</td>
+                                                                  <td>Rakesh.kdjfsh@gdlk.com</td>
+                                                                  <td>+1 876 54673 876</td>
+                                                                  <td>-</td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><input type="checkbox" onclick="checkAll(this)"></td>
+                                                                  <td>Rakesh Kumar</td>
+                                                                  <td>Rakesh.kdjfsh@gdlk.com</td>
+                                                                  <td>+1 876 54673 876</td>
+                                                                  <td>-</td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                         <div class="row">
+                                          <div class="col-md-6 text-left p-1">Show <input type="text" value="1" class="pgnIpt" />of 10 </div>
+                                          <div class="col-md-6 text-right">
+                                             <ul class="pagination justify-content-end ">
+                                                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">Next <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                                      </div>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck2"> <label class="custom-control-label" for="customCheck2">&nbsp;</label> </div>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Postfach 51 01 53, Hannover, 30631, Germany</p>
+                                                      <p class="mb-0">(Hannover-BILL_TO-101811577)</span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Rakesh Kumar</p>
+                                                      <p class="mb-1">rakesh.kumar@sdkfj.com</p>
+                                                      <p class="mb-0">+1 987 654 3256</p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Biz Purp : <span class="font-weight-medium"> </span> </p>
+                                                      <p class="mb-1">LF : <span class="font-weight-medium"> </span></p>
+                                                      <p class="mb-0">Stat/Dun : <span class="font-weight-medium">Enable</span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Inv Copies : <span class="font-weight-medium"> 1 </span></p>
+                                                      <p class="mb-1">Cr Memos : <span class="font-weight-medium"> 1 </span></p>
+                                                      <p class="mb-0">Dr Memos : <span class="font-weight-medium"> 0 </span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Consolidation Method : <span class="font-weight-medium"> PO </span></p>
+                                                      <p class="mb-1">Delivery Method : <span class="font-weight-medium"> Email </span></p>
+                                                      <p class="text-sm-right mb-0"><button type="button" class="btn btn-link p-0">More Invoice Preferences</button></p>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck3"> <label class="custom-control-label" for="customCheck3">&nbsp;</label> </div>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Postfach 51 01 53,<br />Hannover, 30631, Germany</p>
+                                                      <p class="mb-0">(Hannover-BILL_TO-101811577)</span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Rakesh Kumar</p>
+                                                      <p class="mb-1">rakesh.kumar@sdkfj.com</p>
+                                                      <p class="mb-0">+1 987 654 3256</p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Biz Purp : <span class="font-weight-medium"> </span> </p>
+                                                      <p class="mb-1">LF : <span class="font-weight-medium"> </span></p>
+                                                      <p class="mb-0">Stat/Dun : <span class="font-weight-medium">Enable</span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Inv Copies : <span class="font-weight-medium"> 1 </span></p>
+                                                      <p class="mb-1">Cr Memos : <span class="font-weight-medium"> 1 </span></p>
+                                                      <p class="mb-0">Dr Memos : <span class="font-weight-medium"> 0 </span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Consolidation Method : <span class="font-weight-medium"> PO </span></p>
+                                                      <p class="mb-1">Delivery Method : <span class="font-weight-medium"> Email </span></p>
+                                                      <p class="text-sm-right mb-0"><button type="button" class="btn btn-link p-0">More Invoice Preferences</button></p>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck4"> <label class="custom-control-label" for="customCheck4">&nbsp;</label> </div>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Postfach 51 01 53,<br />Hannover, 30631, Germany</p>
+                                                      <p class="mb-0">(Hannover-BILL_TO-101811577)</span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Rakesh Kumar</p>
+                                                      <p class="mb-1">rakesh.kumar@sdkfj.com</p>
+                                                      <p class="mb-0">+1 987 654 3256</p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Biz Purp : <span class="font-weight-medium"> </span> </p>
+                                                      <p class="mb-1">LF : <span class="font-weight-medium"> </span></p>
+                                                      <p class="mb-0">Stat/Dun : <span class="font-weight-medium">Enable</span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Inv Copies : <span class="font-weight-medium"> 1 </span></p>
+                                                      <p class="mb-1">Cr Memos : <span class="font-weight-medium"> 1 </span></p>
+                                                      <p class="mb-0">Dr Memos : <span class="font-weight-medium"> 0 </span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Consolidation Method : <span class="font-weight-medium"> PO </span></p>
+                                                      <p class="mb-1">Delivery Method : <span class="font-weight-medium"> Email </span></p>
+                                                      <p class="text-sm-right mb-0"><button type="button" class="btn btn-link p-0">More Invoice Preferences</button></p>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck5"> <label class="custom-control-label" for="customCheck5">&nbsp;</label> </div>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Postfach 51 01 53,<br />Hannover, 30631, Germany</p>
+                                                      <p class="mb-0">(Hannover-BILL_TO-101811577)</span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Rakesh Kumar</p>
+                                                      <p class="mb-1">rakesh.kumar@sdkfj.com</p>
+                                                      <p class="mb-0">+1 987 654 3256</p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Biz Purp : <span class="font-weight-medium"> </span> </p>
+                                                      <p class="mb-1">LF : <span class="font-weight-medium"> </span></p>
+                                                      <p class="mb-0">Stat/Dun : <span class="font-weight-medium">Enable</span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Inv Copies : <span class="font-weight-medium"> 1 </span></p>
+                                                      <p class="mb-1">Cr Memos : <span class="font-weight-medium"> 1 </span></p>
+                                                      <p class="mb-0">Dr Memos : <span class="font-weight-medium"> 0 </span></p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="mb-1">Consolidation Method : <span class="font-weight-medium"> PO </span></p>
+                                                      <p class="mb-1">Delivery Method : <span class="font-weight-medium"> Email </span></p>
+                                                      <p class="text-sm-right mb-0"><button type="button" class="btn btn-link p-0">More Invoice Preferences</button></p>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-md-6 text-left p-1">Show <input type="text" value="1" class="pgnIpt" />of 10 </div>
+                                          <div class="col-md-6 text-right">
+                                             <ul class="pagination justify-content-end ">
+                                                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">Next <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- end row -->
+                           <ul class="nav nav-tabs" role="tablist">
+                              <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#invoice" role="tab"> <span class="d-block d-sm-none"><i class="fas fa-home"></i></span> <span class="d-none d-sm-block">Invoice</span> </a> </li>
+                              <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#order" role="tab"> <span class="d-block d-sm-none"><i class="far fa-user"></i></span> <span class="d-none d-sm-block">Order</span> </a> </li>
+                           </ul>
+                           <!-- Tab panes --> 
+                           <div class="tab-content p-3 text-muted bg-white">
+                              <div class="tab-pane active" id="invoice" role="tabpanel">
+                                 <table id="invoicetable" class="table table-bordered dt-responsive nowrap">
+                                    <thead>
+                                       <tr>
+                                          <th>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheckAll"> <label class="custom-control-label" for="customCheckAll">All</label> </div>
+                                          </th>
+                                          <th>
+                                             <div class="dropdown">
+                                                <span data-toggle="dropdown">Cur <i class="fa fa-filter"></i> </span> 
+                                                <form class="dropdown-menu dropdown-menu-left p-2">
+                                                   <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="EUR"> <label class="custom-control-label" for="EUR">EUR</label> </div>
+                                                   <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="USD"> <label class="custom-control-label" for="USD">USD</label> </div>
+                                                </form>
+                                             </div>
+                                          </th>
+                                          <th>TXN No</th>
+                                          <th>
+                                             <div class="dropdown">
+                                                <span data-toggle="dropdown">TXN Type <i class="fa fa-filter"></i> </span> 
+                                                <form class="dropdown-menu dropdown-menu-right p-2">
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="INV"> <label class="custom-control-label" for="INV">INV</label> </div>
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="Cr"> <label class="custom-control-label" for="Cr">Cr</label> </div>
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="Dr"> <label class="custom-control-label" for="Dr">Dr</label> </div>
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="Pmt"> <label class="custom-control-label" for="Pmt">Pmt</label> </div>
+                                                </form>
+                                             </div>
+                                          </th>
+                                          <th>Late <i class="fa fa-sort" aria-hidden="true"></i></th>
+                                          <th>TXN Date</th>
+                                          <th>TXN Due Date</th>
+                                          <th>TXN Org Amnt</th>
+                                          <th>TXN Amnt Remn</th>
+                                          <th>Ord No</th>
+                                          <th>Purch Ord</th>
+                                          <th>POD</th>
+                                          <th>
+                                             <div class="dropdown">
+                                                <span data-toggle="dropdown">Disp / Prom <i class="fa fa-filter"></i> </span> 
+                                                <form class="dropdown-menu dropdown-menu-right p-2">
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="Disputes"> <label class="custom-control-label" for="Disputes">Disputes</label> </div>
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="Promises"> <label class="custom-control-label" for="Promises">Promises</label> </div>
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="Broken Promises"> <label class="custom-control-label" for="Broken Promises">Broken Promises</label> </div>
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="Both Disp & Prom"> <label class="custom-control-label" for="Both Disp & Prom">Both Disp & Prom</label> </div>
+                                                </form>
+                                             </div>
+                                          </th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr data-toggle="collapse" data-target="#invoice1">
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td>1407469821</td>
+                                          <td>Inv <a href="#"><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i></a></td>
+                                          <td>21</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : </li>
+                                                   <li> Tax Amnt : </li>
+                                                   <li> Freight / Delivery Cost : </li>
+                                                   <li> Accidental Damage Amnt : </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>12,34,256.00</td>
+                                          <td>1234567890</td>
+                                          <td>101-4500121594</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             <a href="#" class="badge badge-yellow">P</a> 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Promise Notes </li>
+                                                   <li> <input type="text" class="prmNotes"> </li>
+                                                   <li> Promise Amnt: </li>
+                                                   <li> Promise Date: </li>
+                                                   <li> Broken Promise Flag/Indicator: </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+										<tr style="display: none;">
+										   <td colspan="13" class="alert alert-info">
+											  <div id="invoice1" class="collapse">
+												 <h5>Invoice Details</h5>
+												 <hr>
+												 <div class="row">
+													<div class="col-lg-3 col-md-6">
+													   <div clas="order_details_show">
+														  <p class="mb-2"><strong>Transaction Source Type : </strong> BRM, Credit, Rebill </p>
+														  <p class="mb-2"><strong>Invoice Delivery Method : </strong> Post, Email  </p>
+														  <p class="mb-2"><strong>Base Product: </strong> Hardware, Software, Licence </p>
+														  <p class="mb-2"><strong>Transaction Payment Terms : </strong> </p>
+														  <p class="mb-2"><strong>Legal Entity: </strong> </p>
+													   </div>
+													</div>
+													<div class="col-lg-3 col-md-6">
+													   <div clas="order_details_show">
+														  <p class="mb-2"><strong>Sales Rep : </strong> </p>
+														  <p class="mb-2"><strong>End User Contact Information : </strong> </p>
+														  <p class="mb-2"><strong>End user name : </strong> </p>
+														  <p class="mb-2"><strong>End user Number : </strong> </p>
+													   </div>
+													</div>
+													<div class="col-lg-2 col-md-6">
+													   <div clas="order_details_show">
+														  <p class="mb-2"><strong>Bill To Location </strong> </p>
+														  <p class="mb-2 small">Postfach 51 01 53,<br> Hannover, 30631,Germany<br>(Hannover-BILL_TO-101811577) </p>
+													   </div>
+													</div>
+													<div class="col-lg-2 col-md-6">
+													   <div clas="order_details_show">
+														  <p class="mb-2"><strong>Bill To Site No</strong> </p>
+														  <p class="mb-2 small">Postfach 51 01 53,<br> Hannover, 30631,Germany<br>(Hannover-BILL_TO-101811577) </p>
+													   </div>
+													</div>
+													<div class="col-lg-2 col-md-12">
+													   <div clas="order_details_show">
+														  <p class="mb-2"><strong>Unpaid Reason Code : </strong> </p>
+														  <div class="form-group"> <label for="exampleFormControlTextarea1">Last Transaction Level Notes</label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea> </div>
+													   </div>
+													</div>
+												 </div>
+											  </div>
+										   </td>
+										</tr>
+                                       <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td>1407469821</td>
+                                          <td>Inv <a href="#"><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i></a></td>
+                                          <td>17</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : </li>
+                                                   <li> Tax Amnt : </li>
+                                                   <li> Freight / Delivery Cost : </li>
+                                                   <li> Accidental Damage Amnt : </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>12,34,256.00</td>
+                                          <td>1234567890</td>
+                                          <td>101-4500121594</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             <a href="#" class="badge badge-yellow">P</a> 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Promise Notes </li>
+                                                   <li> <input type="text" class="prmNotes"> </li>
+                                                   <li> Promise Amnt: </li>
+                                                   <li> Promise Date: </li>
+                                                   <li> Broken Promise Flag/Indicator: </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td>1407469821</td>
+                                          <td>Inv <a href="#"><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i></a></td>
+                                          <td class="text-danger">34</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : </li>
+                                                   <li> Tax Amnt : </li>
+                                                   <li> Freight / Delivery Cost : </li>
+                                                   <li> Accidental Damage Amnt : </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>12,34,256.00</td>
+                                          <td>1234567890</td>
+                                          <td>101-4500121594</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             <a href="#" class="badge badge-red">P</a> <a href="#" class="badge badge-orange">D</a> 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Promise Notes </li>
+                                                   <li> <input type="text" class="prmNotes"> </li>
+                                                   <li> Promise Amnt: </li>
+                                                   <li> Promise Date: </li>
+                                                   <li> Broken Promise Flag/Indicator: </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td>1407469821</td>
+                                          <td>Inv <a href="#"><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i></a></td>
+                                          <td>29</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : </li>
+                                                   <li> Tax Amnt : </li>
+                                                   <li> Freight / Delivery Cost : </li>
+                                                   <li> Accidental Damage Amnt : </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>12,34,256.00</td>
+                                          <td>1234567890</td>
+                                          <td>101-4500121594</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             <a href="#" class="badge badge-yellow">P</a> 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Promise Notes </li>
+                                                   <li> <input type="text" class="prmNotes"> </li>
+                                                   <li> Promise Amnt: </li>
+                                                   <li> Promise Date: </li>
+                                                   <li> Broken Promise Flag/Indicator: </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td>1407469821</td>
+                                          <td>Inv <a href="#"><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i></a></td>
+                                          <td class="text-danger">48</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : </li>
+                                                   <li> Tax Amnt : </li>
+                                                   <li> Freight / Delivery Cost : </li>
+                                                   <li> Accidental Damage Amnt : </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>12,34,256.00</td>
+                                          <td>1234567890</td>
+                                          <td>101-4500121594</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             <a href="#" class="badge badge-red">P</a> 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Promise Notes </li>
+                                                   <li> <input type="text" class="prmNotes"> </li>
+                                                   <li> Promise Amnt: </li>
+                                                   <li> Promise Date: </li>
+                                                   <li> Broken Promise Flag/Indicator: </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td>1407469821</td>
+                                          <td>Inv <a href="#"><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i></a></td>
+                                          <td>11</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : </li>
+                                                   <li> Tax Amnt : </li>
+                                                   <li> Freight / Delivery Cost : </li>
+                                                   <li> Accidental Damage Amnt : </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>12,34,256.00</td>
+                                          <td>1234567890</td>
+                                          <td>101-4500121594</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             <a href="#" class="badge badge-yellow">P</a> 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Promise Notes </li>
+                                                   <li> <input type="text" class="prmNotes"> </li>
+                                                   <li> Promise Amnt: </li>
+                                                   <li> Promise Date: </li>
+                                                   <li> Broken Promise Flag/Indicator: </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td>1407469821</td>
+                                          <td>Inv <a href="#"><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i></a></td>
+                                          <td class="text-danger">45</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : </li>
+                                                   <li> Tax Amnt : </li>
+                                                   <li> Freight / Delivery Cost : </li>
+                                                   <li> Accidental Damage Amnt : </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>12,34,256.00</td>
+                                          <td>1234567890</td>
+                                          <td>101-4500121594</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             <a href="#" class="badge badge-red">P</a> 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Promise Notes </li>
+                                                   <li> <input type="text" class="prmNotes"> </li>
+                                                   <li> Promise Amnt: </li>
+                                                   <li> Promise Date: </li>
+                                                   <li> Broken Promise Flag/Indicator: </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td>1407469821</td>
+                                          <td>Inv <a href="#"><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i></a></td>
+                                          <td class="text-danger">34</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : </li>
+                                                   <li> Tax Amnt : </li>
+                                                   <li> Freight / Delivery Cost : </li>
+                                                   <li> Accidental Damage Amnt : </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>12,34,256.00</td>
+                                          <td>1234567890</td>
+                                          <td>101-4500121594</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             <a href="#" class="badge badge-red">P</a> 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Promise Notes </li>
+                                                   <li> <input type="text" class="prmNotes"> </li>
+                                                   <li> Promise Amnt: </li>
+                                                   <li> Promise Date: </li>
+                                                   <li> Broken Promise Flag/Indicator: </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td>1407469821</td>
+                                          <td>Inv <a href="#"><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i></a></td>
+                                          <td>13</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : </li>
+                                                   <li> Tax Amnt : </li>
+                                                   <li> Freight / Delivery Cost : </li>
+                                                   <li> Accidental Damage Amnt : </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>12,34,256.00</td>
+                                          <td>1234567890</td>
+                                          <td>101-4500121594</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             <a href="#" class="badge badge-red">P</a> 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Promise Notes </li>
+                                                   <li> <input type="text" class="prmNotes"> </li>
+                                                   <li> Promise Amnt: </li>
+                                                   <li> Promise Date: </li>
+                                                   <li> Broken Promise Flag/Indicator: </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td>1407469821</td>
+                                          <td>Inv <a href="#"><i class="fa fa-file-pdf-o text-danger" aria-hidden="true"></i></a></td>
+                                          <td class="text-danger">34</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : </li>
+                                                   <li> Tax Amnt : </li>
+                                                   <li> Freight / Delivery Cost : </li>
+                                                   <li> Accidental Damage Amnt : </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>12,34,256.00</td>
+                                          <td>1234567890</td>
+                                          <td>101-4500121594</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>
+                                             <a href="#" class="badge badge-yellow">P</a> 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Promise Notes </li>
+                                                   <li> <input type="text" class="prmNotes"> </li>
+                                                   <li> Promise Amnt: </li>
+                                                   <li> Promise Date: </li>
+                                                   <li> Broken Promise Flag/Indicator: </li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class="tab-pane" id="order" role="tabpanel">
+								 <table id="ordertable" class="table table-bordered dt-responsive nowrap">
+                                    <thead>
+                                       <tr>
+                                          <th>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheckAll"> <label class="custom-control-label" for="customCheckAll">All</label> </div>
+                                          </th>
+                                          <th>
+                                             <div class="dropdown">
+                                                <span data-toggle="dropdown">Cur <i class="fa fa-filter"></i> </span> 
+                                                <form class="dropdown-menu dropdown-menu-left p-2">
+                                                   <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="EUR"> <label class="custom-control-label" for="EUR">EUR</label> </div>
+                                                   <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="USD"> <label class="custom-control-label" for="USD">USD</label> </div>
+                                                </form>
+                                             </div>
+                                          </th>
+                                          <th>Ord No</th>
+                                          <th>
+                                             <div class="dropdown">
+                                                <span data-toggle="dropdown">PO No  <i class="fa fa-sort" aria-hidden="true"></i> </span>	
+                                             </div>
+                                          </th>
+                                          <th>Inv No</th>
+                                          <th>Order Date <i class="fa fa-sort" aria-hidden="true"></i></th>
+                                          <th>Ship Date</th>
+                                          <th>Order Amount</th>
+                                          <th>Cons Status</th>
+                                          <th>Ord Enter By</th>
+                                          <th>
+										  <div class="dropdown">
+                                                <span data-toggle="dropdown">Ord Status <i class="fa fa-filter"></i> </span> 
+                                                <!-- <form class="dropdown-menu dropdown-menu-right p-2">
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="Disputes"> <label class="custom-control-label" for="Disputes">Disputes</label> </div>
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="Promises"> <label class="custom-control-label" for="Promises">Promises</label> </div>
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="Broken Promises"> <label class="custom-control-label" for="Broken Promises">Broken Promises</label> </div>
+                                                   <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="Both Disp & Prom"> <label class="custom-control-label" for="Both Disp & Prom">Both Disp & Prom</label> </div>
+                                                </form> -->
+                                             </div>
+										  </th>
+                                          <th>Service Tag(s)</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr data-toggle="collapse" data-target="#order1">
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td class="text-info">161888558</td>
+                                          <td>1234567890</td>
+                                          <td class="text-info">1234567890</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : 00000</li>
+                                                   <li> Tax Amnt : 00000</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>Yes</td>
+                                          <td>akshay_pandey1@dell.com</td>
+                                          <td> </td>
+                                          <td>1234567890
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right"><h6>Service Tag(s) List</h6>
+                                                   <li>Tag 1 : 1234567890</li>
+                                                   <li>Tag 2 : 1234567890</li>
+                                                   <li>Tag 3 : 1234567890</li>
+                                                   <li>Tag 4 : 1234567890</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+										<tr style="display: none;">
+										   <td colspan="13" class="alert alert-info">
+											  <div id="order1" class="collapse">
+												 <h5>Order Details</h5><hr>
+												 <div class="row">
+													<div class="col-lg-4 col-md-6">
+													   <div clas="order_details_show">
+														  <p class="mb-2"><strong>DPID Number : </strong> </p>
+														  <p class="mb-2"><strong>Sales System : </strong> </p>
+														  <p class="mb-2"><strong>POD Date : </strong> </p>
+														  <p class="mb-2"><strong>Delivery Request Date : </strong> </p>
+													   </div>
+													</div>
+													<div class="col-lg-4 col-md-6">
+													   <div clas="order_details_show">
+														  <p class="mb-2"><strong>Internet Receipt Number (IRN) : </strong> </p>
+														  <p class="mb-2"><strong>Date of Sending to Invoice : </strong> </p>
+														  <p class="mb-2"><strong>Order Holds Status : </strong> Fraud</p>
+														  <p class="mb-2"><strong>Customer e-mail address / purchaser : </strong> </p>
+													   </div>
+													</div>
+													<div class="col-lg-4 col-md-6">
+													   <div clas="order_details_show">
+														  <p class="mb-2"><strong>Order type : </strong> </p>
+														  <p class="mb-2"><strong>Freight / other Charges : </strong> </p>
+														  <p class="mb-2"><strong>Product Description/Brent Description/Domain SKU : </strong> </p>
+														  <p class="mb-2"><strong>Source of Order : </strong> </p>
+													   </div>
+													</div>
+												 </div>
+											  </div>
+										   </td>
+										</tr>
+                                       <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td class="text-info">161888558</td>
+                                          <td>1234567890</td>
+                                          <td class="text-info">1234567890</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : 00000</li>
+                                                   <li> Tax Amnt : 00000</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td class="text-warning">Pending</td>
+                                          <td>akshay_pandey1@dell.com</td>
+                                          <td> </td>
+                                          <td>1234567890
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right"><h5>Service Tag(s) List</h5>
+                                                   <li>Tag 1 : 1234567890</li>
+                                                   <li>Tag 2 : 1234567890</li>
+                                                   <li>Tag 3 : 1234567890</li>
+                                                   <li>Tag 4 : 1234567890</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td class="text-info">161888558</td>
+                                          <td>1234567890</td>
+                                          <td class="text-info">1234567890</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : 00000</li>
+                                                   <li> Tax Amnt : 00000</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>Yes</td>
+                                          <td>akshay_pandey1@dell.com</td>
+                                          <td> </td>
+                                          <td>1234567890
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right"><h5>Service Tag(s) List</h5>
+                                                   <li>Tag 1 : 1234567890</li>
+                                                   <li>Tag 2 : 1234567890</li>
+                                                   <li>Tag 3 : 1234567890</li>
+                                                   <li>Tag 4 : 1234567890</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+									   <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td class="text-info">161888558</td>
+                                          <td>1234567890</td>
+                                          <td class="text-info">1234567890</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : 00000</li>
+                                                   <li> Tax Amnt : 00000</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>Yes</td>
+                                          <td>akshay_pandey1@dell.com</td>
+                                          <td> </td>
+                                          <td>1234567890
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right"><h5>Service Tag(s) List</h5>
+                                                   <li>Tag 1 : 1234567890</li>
+                                                   <li>Tag 2 : 1234567890</li>
+                                                   <li>Tag 3 : 1234567890</li>
+                                                   <li>Tag 4 : 1234567890</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+									   <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td class="text-info">161888558</td>
+                                          <td>1234567890</td>
+                                          <td class="text-info">1234567890</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : 00000</li>
+                                                   <li> Tax Amnt : 00000</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td class="text-warning">Pending</td>
+                                          <td>akshay_pandey1@dell.com</td>
+                                          <td> </td>
+                                          <td>1234567890
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right"><h5>Service Tag(s) List</h5>
+                                                   <li>Tag 1 : 1234567890</li>
+                                                   <li>Tag 2 : 1234567890</li>
+                                                   <li>Tag 3 : 1234567890</li>
+                                                   <li>Tag 4 : 1234567890</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+									   <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td class="text-info">161888558</td>
+                                          <td>1234567890</td>
+                                          <td class="text-info">1234567890</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : 00000</li>
+                                                   <li> Tax Amnt : 00000</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>Yes</td>
+                                          <td>akshay_pandey1@dell.com</td>
+                                          <td> </td>
+                                          <td>1234567890
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right"><h5>Service Tag(s) List</h5>
+                                                   <li>Tag 1 : 1234567890</li>
+                                                   <li>Tag 2 : 1234567890</li>
+                                                   <li>Tag 3 : 1234567890</li>
+                                                   <li>Tag 4 : 1234567890</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+									   <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td class="text-info">161888558</td>
+                                          <td>1234567890</td>
+                                          <td class="text-info">1234567890</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : 00000</li>
+                                                   <li> Tax Amnt : 00000</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>Yes</td>
+                                          <td>akshay_pandey1@dell.com</td>
+                                          <td> </td>
+                                          <td>1234567890
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right"><h5>Service Tag(s) List</h5>
+                                                   <li>Tag 1 : 1234567890</li>
+                                                   <li>Tag 2 : 1234567890</li>
+                                                   <li>Tag 3 : 1234567890</li>
+                                                   <li>Tag 4 : 1234567890</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+									   <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td class="text-info">161888558</td>
+                                          <td>1234567890</td>
+                                          <td class="text-info">1234567890</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : 00000</li>
+                                                   <li> Tax Amnt : 00000</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td class="text-warning">Pending</td>
+                                          <td>akshay_pandey1@dell.com</td>
+                                          <td> </td>
+                                          <td>1234567890
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right"><h5>Service Tag(s) List</h5>
+                                                   <li>Tag 1 : 1234567890</li>
+                                                   <li>Tag 2 : 1234567890</li>
+                                                   <li>Tag 3 : 1234567890</li>
+                                                   <li>Tag 4 : 1234567890</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+									   <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td class="text-info">161888558</td>
+                                          <td>1234567890</td>
+                                          <td class="text-info">1234567890</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : 00000</li>
+                                                   <li> Tax Amnt : 00000</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>Yes</td>
+                                          <td>akshay_pandey1@dell.com</td>
+                                          <td> </td>
+                                          <td>1234567890
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right"><h5>Service Tag(s) List</h5>
+                                                   <li>Tag 1 : 1234567890</li>
+                                                   <li>Tag 2 : 1234567890</li>
+                                                   <li>Tag 3 : 1234567890</li>
+                                                   <li>Tag 4 : 1234567890</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+									   <tr>
+                                          <td>
+                                             <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">&nbsp;</label> </div>
+                                          </td>
+                                          <td>EUR</td>
+                                          <td class="text-info">161888558</td>
+                                          <td>1234567890</td>
+                                          <td class="text-info">1234567890</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>26 JAN 2019</td>
+                                          <td>12,34,256.00 
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                   <li> Net Amnt : 00000</li>
+                                                   <li> Tax Amnt : 00000</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                          <td>Yes</td>
+                                          <td>akshay_pandey1@dell.com</td>
+                                          <td> </td>
+                                          <td>1234567890
+                                             <span class="dropdown rowDropDown">
+                                                <i data-toggle="dropdown" class="fa fa-angle-down fa-lg fa-fw text-info" aria-hidden="true"></i> 
+                                                <ul class="dropdown-menu dropdown-menu-right"><h5>Service Tag(s) List</h5>
+                                                   <li>Tag 1 : 1234567890</li>
+                                                   <li>Tag 2 : 1234567890</li>
+                                                   <li>Tag 3 : 1234567890</li>
+                                                   <li>Tag 4 : 1234567890</li>
+                                                </ul>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+								 
+								 
+								 
+                              </div>
+							  <div class="row">
+                                          <div class="col-md-6 text-left p-1">Show <input type="text" value="1" class="pgnIpt" />of 10 </div>
+                                          <div class="col-md-6 text-right">
+                                             <ul class="pagination justify-content-end ">
+                                                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">Next <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                           </div>
+                           <!-- tab panel end --> 
+						   
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end row --> 
+               </div>
+               <!-- container-fluid --> 
+            </div>
+            <!-- End Page-content --> 
+         </div>
+         <!-- end main content--> 
+      </div>
+      <!-- END layout-wrapper --> 
+	  <!-- JAVASCRIPT --> 
+	  <script src="assets/libs/jquery/jquery.min.js"></script> 
+	  <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script> 
+	  <!-- Custom js --> 
+	  <script src="./assets/js/custom.js"></script> 
+	  <script src="assets/js/datatables.init.js"></script>
+   </body>
+</html>

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {font-family: 'Roboto', sans-serif;background-color:#fff;}
+body[data-topbar=dark] #page-topbar {background-color: #0076CE;}
+body[data-topbar=dark] .header-item {color: #e9ecef;}
+body[data-topbar=dark] .header-item:hover {color: #e9ecef;}
+body[data-topbar=dark] .header-profile-user {background-color: rgba(255, 255, 255, .25);}
+body[data-topbar=dark] .logo-light {display: block;}
+body[data-layout=horizontal] .navbar-brand-box {width: auto !important;padding:0 1.5rem;}
+body[data-layout=horizontal] .page-content {margin-top: 85px;padding: calc(25px + 24px) calc(24px / 2) 60px calc(24px / 2);}
+body[data-layout=horizontal] .main-content {margin-left: 0 !important;}
+
+#page-topbar{position:fixed;top:0;right:0;left:0;z-index:1002;background-color:#fff;-webkit-box-shadow:0 .75rem 1.5rem rgba(18,38,63,.03);box-shadow:0 .75rem 1.5rem rgba(18,38,63,.03;)}
+#preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fff;z-index:9999}
+#status{width:40px;height:40px;position:absolute;left:50%;top:50%;margin:-20px 0 0 -20px}
+p {margin-top: 0;margin-bottom: 0.5rem !important;}
+
+/* .page-content {padding: calc(70px + 24px) calc(24px / 2) 60px calc(24px / 2);} */
+.main-content .content {padding: 0 15px 10px 15px;margin-top: 70px;}
+
+.navbar-header{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 auto;height:85px;padding:0;}
+
+.header-item {height: 44px;-webkit-box-shadow: none !important;box-shadow: none !important;color: #555b6d;border: 0;border-radius: 0;}
+.header-item:hover {color: #555b6d;}
+.header-profile-user {height: 36px;width: 36px;background-color: #f6f6f6;padding: 3px;}
+
+.logo{line-height:70px;}
+.logo-light{display:none;}
+.logo span.logo-lg {display: none;}
+.logo span.logo-sm {display: block;}
+
+.search-box {padding: 15px;display: flex;flex-direction: column;justify-content: center;text-align: center;}
+.search-icon{font-size:16px;position:absolute;left:13px;top:0;line-height:38px}
+.input-group-text{padding:.7rem .75rem;border-radius:0}
+
+.font-size-11{font-size:11px!important}
+.font-size-12{font-size:12px!important}
+.font-size-13{font-size:13px!important}
+.font-size-14{font-size:14px!important}
+.font-size-15{font-size:15px!important}
+.font-size-16{font-size:16px!important}
+.font-size-17{font-size:17px!important}
+.font-size-18{font-size:18px!important}
+.font-size-20{font-size:20px!important}
+.font-size-22{font-size:22px!important}
+.font-size-24{font-size:24px!important}
+.font-weight-medium{font-weight:bold;}
+.font-weight-semibold{font-weight: bolder;}
+
+.top-border{border-top: #0076CE solid 3px;}
+.input-group-text {color: #fff;background-color: #0076CE;border: 1px solid #005EA3;}
+
+.avatar-sm {
+    height: 3rem;
+    width: 3rem;
+}
+.avatar-title {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #556ee6;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 500;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media print {
+	.navbar-header{display:none!important}
+	.card-body,.main-content,.page-content,body{padding:0;margin:0}
+	.card{border:0}
+}
+
+@media (max-width:380px) {
+  .navbar-brand-box {display: block;}
+}
+
+@media (max-width: 992px) {
+	body[data-layout=horizontal] .page-content {margin-top: 65px;padding: calc(25px + 24px) calc(24px / 2) 60px calc(24px / 2);}
+	.main-content {margin-left: 0 !important;}
+	.navbar-brand-box {width: auto;}
+	.logo span.logo-lg {display: block;}
+	.logo span.logo-sm {display: none;}
+}
+
+@media (min-width: 1200px) {
+	body[data-layout=horizontal] .container-fluid,
+	body[data-layout=horizontal] .navbar-header {max-width: 95%;}
+}
+
+
+
+
+
+/* ================= Customer Details CSS ============== */
+.blockquote-risk{padding:10px 20px;border:1px solid #6E2585;border-left:4px solid #6E2585;font-size:1.01563rem;margin:0 0 1rem;color:#6E2585!important}
+.blockquote-credit-limit{padding:10px 20px;border:1px solid #EE6411;border-left:4px solid #EE6411;font-size:1.01563rem;margin:0 0 1rem;color:#EE6411!important}
+.nav-tabs .nav-link{border-left:1px solid #aaa;border-right:1px solid #aaa;border-top:1px solid #aaa;border-top-left-radius:.25rem;border-top-right-radius:.25rem;background:rgba(255,255,255,1);background:-moz-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);background:-webkit-gradient(left top,left bottom,color-stop(0%,rgba(255,255,255,1)),color-stop(100%,rgba(238,238,238,1)));background:-webkit-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);background:-o-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);background:-ms-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);background:linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);filter:progid: DXImageTransform.Microsoft.gradient(startColorstr='#fff',endColorstr='#eee',GradientType=0)}
+.nav-tabs .nav-link:focus,.nav-tabs .nav-link:hover{border-left:1px solid #aaa;border-right:1px solid #aaa;border-top:1px solid #aaa}
+.nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active{border-top:#0076CE solid 3px;background:#fff;}
+.bg-white{background-color:#fff!important}
+.bg-gray{background-color:#f3f3f3!important}
+
+.pgnIpt{width: 30px;margin: 0px 10px;}
+
+.page-link {border: none;background-color: transparent !important;font-size: .8125rem;}
+.page-link:hover {color: #0076CE !important;}
+
+#siteInfo td:nth-child(2){width: 30%!important;}
+#siteInfoExp {margin-top: 10px !important;}
+#siteInfoExp thead {color: white;background-color: #0076ce;}
+#siteInfoExp td,th {border-bottom: 1px solid black;text-align: center;}
+.searchBar {background-color: white;position: fixed !important;width: 100%;z-index: 1;top: 85px;right: 0;left: 0;padding-top: 10px;}
+/* ================= Customer Details CSS ============== */
+
+
+
+/* ================= TABLE CSS ============== */
+.dropdown-menu{border-top: #0076CE solid 3px !important;font-size: .675rem;}
+.rowDropDown ul{padding: 10px;min-width: 250px;font-size: x-small;}
+.prmNotes {width: 100%;height: 40px;}
+
+.table td, .table th {padding: .65rem;font-size: .675rem;/* text-align: center; */}
+
+.badge {padding: .3em .4em;font-size: 100%; color:#fff !important;}
+
+.badge-red{color:#fff;background-color:#d90000}
+a.badge-red:focus,a.badge-red:hover{color:#fff;background-color:#c60000}
+a.badge-red.focus,a.badge-red:focus{outline:0;-webkit-box-shadow:0 0 0 .15rem rgba(244,106,106,.5);box-shadow:0 0 0 .15rem rgba(244,106,106,.5)}
+
+.badge-orange{color:#fff;background-color:#EE6411}
+a.badge-orange:focus,a.badge-orange:hover{color:#fff;background-color:#f36008}
+a.badge-orange.focus,a.badge-orange:focus{outline:0;-webkit-box-shadow:0 0 0 .15rem rgba(232,62,140,.5);box-shadow:0 0 0 .15rem rgba(232,62,140,.5)}
+
+.badge-yellow{color:#fff;background-color:#f1b44c}
+a.badge-yellow:focus,a.badge-yellow:hover{color:#fff;background-color:#eda01d}
+a.badge-yellow.focus,a.badge-yellow:focus{outline:0;-webkit-box-shadow:0 0 0 .15rem rgba(241,180,76,.5);box-shadow:0 0 0 .15rem rgba(241,180,76,.5)}
+/* ================= TABLE CSS ============== */
